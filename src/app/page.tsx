@@ -2,7 +2,9 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <figure className="md:flex bg-slate-100 rounded-xl p-8 md:p-0 dark:bg-slate-800">
+    <figure className="md:flex flex-col bg-slate-100 rounded-xl p-8 md:p-0 dark:bg-slate-800">
+ 
+   <div className="md:flex">
   <img className="w-24 h-24 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto" src="https://images.unsplash.com/photo-1587837073080-448bc6a2329b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fG1vZGVsJTIwbWFsZSUyMGFlc3RoZXRpY3xlbnwwfHwwfHx8MA%3D%3D" alt="" width="384" height="512"/>
   <div className="pt-6 md:p-8 text-center md:text-left space-y-4">
     <blockquote>
@@ -21,6 +23,11 @@ export default function Home() {
       </div>
     </figcaption>
   </div>
-</figure>
+  </div> 
+  
+  
+  </figure>
+
+
   );
 }
